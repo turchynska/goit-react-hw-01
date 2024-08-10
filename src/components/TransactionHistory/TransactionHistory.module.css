@@ -1,0 +1,41 @@
+.table {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #111111;
+    border-collapse: collapse;
+  }
+  
+  .thead {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #302f2f;
+  }
+  
+  .title,
+  .cell {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border-right: 1px solid #111111;
+  }
+  
+  .title {
+    color: #ffffff;
+  }
+  
+  .title:last-child,
+  .cell:last-child {
+    border-right: none;
+  }
+  
+  .row {
+    text-align: center;
+    display: flex; 
+    border: 1px solid #111111;
+    gap: 10px;
+  }
+  
+  .row:nth-child(even) {
+    background-color: lightgrey;
+  }
